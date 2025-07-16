@@ -8,7 +8,7 @@
         <version>3.5.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.dhl.tech</groupId>
+    <groupId>com.dhl.ems</groupId>
     <artifactId>Eureka-service-discovery</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Eureka-service-discovery</name>
