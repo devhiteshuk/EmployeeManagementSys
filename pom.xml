@@ -11,6 +11,7 @@
 	<groupId>com.dhl.ems</groupId>
 	<artifactId>ems-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>ems-backend</name>
 	<description>Demo application for employee management system</description>
 	<url/>
@@ -20,6 +21,9 @@
 	<developers>
 		<developer/>
 	</developers>
+	<modules>
+		<module>eureka-service-discovery</module>
+	</modules>
 	<scm>
 		<connection/>
 		<developerConnection/>
