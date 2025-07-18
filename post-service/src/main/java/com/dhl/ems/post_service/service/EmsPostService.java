@@ -2,6 +2,8 @@ package com.dhl.ems.post_service.service;
 
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public interface EmsPostService {
 
@@ -14,5 +16,6 @@ public interface EmsPostService {
 
     void deletePost(String postId);
 
+    List<String> getAllPosts();
     // Additional methods can be added as needed
 }

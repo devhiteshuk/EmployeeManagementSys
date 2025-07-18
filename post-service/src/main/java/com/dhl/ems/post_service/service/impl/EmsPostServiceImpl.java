@@ -3,6 +3,8 @@ package com.dhl.ems.post_service.service.impl;
 import com.dhl.ems.post_service.service.EmsPostService;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class EmsPostServiceImpl implements EmsPostService {
 
@@ -24,5 +26,10 @@ public class EmsPostServiceImpl implements EmsPostService {
     @Override
     public void deletePost(String postId) {
 
+    }
+
+    @Override
+    public List<String> getAllPosts() {
+        return List.of("Post 1", "Post 2", "Post 3");
     }
 }
