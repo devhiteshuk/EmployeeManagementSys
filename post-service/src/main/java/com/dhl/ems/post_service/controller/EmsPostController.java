@@ -2,11 +2,11 @@ package com.dhl.ems.post_service.controller;
 
 import com.dhl.ems.post_service.service.EmsPostService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.logging.LoggingRebinder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 
 
