@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/api/v1/posts")
@@ -37,7 +39,12 @@ public class EmsPostController {
 
     // Additional endpoints can be added
     @GetMapping("/{postId}")
-    public ResponseEntity<?> getPostById(String postId) {
+    public ResponseEntity<String> getPostById(String postId) {
         return ResponseEntity.ok(emsPostService.getPostById(postId));
+    }
+
+    @GetMapping
+    public ResponseEntity<List<String>> getAllPosts() {
+        return ResponseEntity.ok(emsPostService.getAllPosts());
     }
 }
